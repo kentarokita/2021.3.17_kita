@@ -1,0 +1,281 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.ttl {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+$base-c:#e37ab0;
+$second-c:#6f99e3;
+@mixin imgbase {
+  img{
+    width: 100%;
+  }
+}
+@mixin ancker {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  background-color: $base-c;
+  border-radius: 25px;
+  text-align: center;
+}
+@mixin  flexbase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin bg-color {
+
+  
+}
+
+header a {
+  text-decoration:none;
+}
+
+.fview {
+  @include flexbase ;
+  .fview__imgflame{
+    width:150px;
+    .fview__img{
+      @include imgbase;
+    }
+  }
+}
+
+.fview-nav {
+  display: flex;
+  justify-content: space-between;
+  .nav__link {
+    text-decoration: none;
+    margin-left: 10px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.signup {
+  display: flex;
+  a {
+    display: block;
+    color: white;
+    padding:10px 25px;
+    border-radius: 25px;
+  }
+  .signup__materials{
+    background-color: $base-c;
+    margin-right: 10px;
+  }
+  .signup--c-account {
+    background-color: $second-c;
+  }
+}
+
+.top{
+  @include flexbase ;
+  .top__text {
+    width: 60%;
+    h1 {
+      font-size: 45px;
+    }
+    .top__materials {
+      @include ancker;
+      width: 50%;
+    }
+  }
+  .top__imgflame {
+    width: 30%;
+    .top__img {
+      @include imgbase;
+    }
+  }
+}
+
+.concept {
+  @include flexbase ;
+  .concept__imgflame {
+    width: 40%;
+  }
+  .concept__img {
+    @include imgbase;
+  }
+  .concept__text {
+    width: 50%;
+    font-size: 30px;
+  }
+}
+
+.task__flex {
+  @include flexbase;
+  .task__flame {
+    width: 30%;
+    .task__imgflame {
+      @include imgbase ;
+      .task__img {
+        @include imgbase ;
+      }
+    }
+    .task__text {
+      text-align: center;
+    }
+
+  }
+}
+
+.clear__content {
+  @include flexbase ;
+  .clear__item {
+    .clear__text {
+      width: 50%;
+      .clear__text-flex {
+        display: flex;
+        text-align: center;
+        .clear__number{
+          color: $base-c;
+          font-size: 20px;
+        }
+      }
+    }
+    .clear__imgflame {
+      width: 40%;
+     .clear__img {
+      width: 100%;
+     }
+    }
+  }
+}
+
+.feature__flex {
+  @include flexbase ;
+  .flex__item {
+    box-shadow: $base-c 0px 0px 5px , $base-c -0px -0px 5px;
+    width: 15%;
+    border-radius: 15px;
+    text-align: center;
+    p {
+      margin: 5px 0;
+    }
+    .feature__imgflame {
+      margin-top: 5px;
+      width: 100% ;
+      .feature__img {
+
+        @include imgbase ;
+      }
+    }
+  }
+}
+
+.signup-page {
+  h2 {
+    text-align: center
+  }
+  .signup-page__btn {
+    display: flex;
+    justify-content: center;
+    .signup-page__materials {
+      display: inline-block;
+      @include ancker ;
+      background-color: $second-c;
+      width: 35%;
+      margin-right: 30px;
+    }
+    .signup-page__c-account {
+      display: inline-block;
+      @include ancker ;
+      background-color:white;
+      border:2px solid #e37ab0;      
+      color: #e37ab0;
+      width: 35%;
+    }
+  }
+}
+
+.example__flex {
+  @include flexbase;
+  width: 90%;
+  margin: 0 auto;
+  .example__item {
+    width: 18%;
+    border-radius: 5px;
+    box-shadow: lightgray 0px 1px 3px , lightgray 0px -1px 3px ;
+    .example__imgflame{
+      @include imgbase;
+      .example__img {
+        @include imgbase;
+        border-radius: 5px;
+      } 
+    }
+    .example__textbox {
+      padding: 20px 10px 10px 10px;
+      position: relative;
+      .example__tag {
+        position: absolute;
+        top: -19%;
+        padding: 5px 8px;
+        border: 1px solid $base-c;
+        background-color: white;
+      }
+      .example__name {
+        margin-top: 15px;
+      }
+      .example__text {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: left;
+        margin: 15px 0;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.cost__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  .cost__item {
+    width: 33%;
+    border-radius: 15px;
+    box-shadow: lightgray 0px 1px 3px , lightgray 0px -1px 3px ;
+
+    .cost__plan {
+      color: white;
+      h2 {
+        font-size: 35px;
+      }
+    }
+    .cost__plan-contents {
+      .cost__plan-marit {
+        border-bottom: 1px solid lightgray;
+        width: 90%;
+        margin: 0 auto;
+      }
+      .cost__plan-apply {
+        @include ancker ;
+        background-color: lightgray;
+        color: black;
+      }
+      a {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.cib {
+  background-color: $second-c;
+}
+.cip {
+  background-color: $base-c;
+}

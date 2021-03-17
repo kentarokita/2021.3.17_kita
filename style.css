@@ -1,0 +1,335 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ttl {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.fview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fview .fview__imgflame {
+  width: 150px;
+}
+
+.fview .fview__imgflame .fview__img img {
+  width: 100%;
+}
+
+.fview-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fview-nav .nav__link {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.fview-nav .nav__link li {
+  list-style: none;
+}
+
+.signup {
+  display: flex;
+}
+
+.signup a {
+  display: block;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+.signup .signup__materials {
+  background-color: #e37ab0;
+  margin-right: 10px;
+}
+
+.signup .signup--c-account {
+  background-color: #6f99e3;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .top__text {
+  width: 60%;
+}
+
+.top .top__text h1 {
+  font-size: 45px;
+}
+
+.top .top__text .top__materials {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  background-color: #e37ab0;
+  border-radius: 25px;
+  text-align: center;
+  width: 50%;
+}
+
+.top .top__imgflame {
+  width: 30%;
+}
+
+.top .top__imgflame .top__img img {
+  width: 100%;
+}
+
+.concept {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.concept .concept__imgflame {
+  width: 40%;
+}
+
+.concept .concept__img img {
+  width: 100%;
+}
+
+.concept .concept__text {
+  width: 50%;
+  font-size: 30px;
+}
+
+.task__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__flex .task__flame {
+  width: 30%;
+}
+
+.task__flex .task__flame .task__imgflame img {
+  width: 100%;
+}
+
+.task__flex .task__flame .task__imgflame .task__img img {
+  width: 100%;
+}
+
+.task__flex .task__flame .task__text {
+  text-align: center;
+}
+
+.clear__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear__content .clear__item .clear__text {
+  width: 50%;
+}
+
+.clear__content .clear__item .clear__text .clear__text-flex {
+  display: flex;
+  text-align: center;
+}
+
+.clear__content .clear__item .clear__text .clear__text-flex .clear__number {
+  color: #e37ab0;
+  font-size: 20px;
+}
+
+.clear__content .clear__item .clear__imgflame {
+  width: 40%;
+}
+
+.clear__content .clear__item .clear__imgflame .clear__img {
+  width: 100%;
+}
+
+.feature__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature__flex .flex__item {
+  box-shadow: #e37ab0 0px 0px 5px, #e37ab0 0px 0px 5px;
+  width: 15%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.feature__flex .flex__item p {
+  margin: 5px 0;
+}
+
+.feature__flex .flex__item .feature__imgflame {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.feature__flex .flex__item .feature__imgflame .feature__img img {
+  width: 100%;
+}
+
+.signup-page h2 {
+  text-align: center;
+}
+
+.signup-page .signup-page__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-page .signup-page__btn .signup-page__materials {
+  display: inline-block;
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  background-color: #e37ab0;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #6f99e3;
+  width: 35%;
+  margin-right: 30px;
+}
+
+.signup-page .signup-page__btn .signup-page__c-account {
+  display: inline-block;
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  background-color: #e37ab0;
+  border-radius: 25px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #e37ab0;
+  color: #e37ab0;
+  width: 35%;
+}
+
+.example__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.example__flex .example__item {
+  width: 18%;
+  border-radius: 5px;
+  box-shadow: lightgray 0px 1px 3px , lightgray 0px -1px 3px;
+}
+
+.example__flex .example__item .example__imgflame img {
+  width: 100%;
+}
+
+.example__flex .example__item .example__imgflame .example__img {
+  border-radius: 5px;
+}
+
+.example__flex .example__item .example__imgflame .example__img img {
+  width: 100%;
+}
+
+.example__flex .example__item .example__textbox {
+  padding: 20px 10px 10px 10px;
+  position: relative;
+}
+
+.example__flex .example__item .example__textbox .example__tag {
+  position: absolute;
+  top: -19%;
+  padding: 5px 8px;
+  border: 1px solid #e37ab0;
+  background-color: white;
+}
+
+.example__flex .example__item .example__textbox .example__name {
+  margin-top: 15px;
+}
+
+.example__flex .example__item .example__textbox .example__text {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin: 15px 0;
+  padding: 0 10px;
+}
+
+.cost__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cost__flex .cost__item {
+  width: 33%;
+  border-radius: 15px;
+  box-shadow: lightgray 0px 1px 3px , lightgray 0px -1px 3px;
+}
+
+.cost__flex .cost__item .cost__plan {
+  color: white;
+}
+
+.cost__flex .cost__item .cost__plan h2 {
+  font-size: 35px;
+}
+
+.cost__flex .cost__item .cost__plan-contents .cost__plan-marit {
+  border-bottom: 1px solid lightgray;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cost__flex .cost__item .cost__plan-contents .cost__plan-apply {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  background-color: #e37ab0;
+  border-radius: 25px;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+}
+
+.cost__flex .cost__item .cost__plan-contents a {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.cib {
+  background-color: #6f99e3;
+}
+
+.cip {
+  background-color: #e37ab0;
+}
