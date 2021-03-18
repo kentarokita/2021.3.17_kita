@@ -30,9 +30,13 @@ $second-c:#6f99e3;
   align-items: center;
 }
 @mixin bg-color {
-
-  
+  background-color: #FFDFF7;
 }
+@mixin section-space {
+  padding: 25px 0;
+  margin: 25px 0;
+}
+
 
 header a {
   text-decoration:none;
@@ -40,6 +44,7 @@ header a {
 
 .fview {
   @include flexbase ;
+  margin-bottom: 25px;
   .fview__imgflame{
     width:150px;
     .fview__img{
@@ -77,28 +82,34 @@ header a {
   }
 }
 
-.top{
-  @include flexbase ;
-  .top__text {
-    width: 60%;
-    h1 {
-      font-size: 45px;
+.top {
+  background-image: url(img/fv__bg-pc.svg);
+  background-size: cover;
+  .top__flex{
+    @include flexbase ;
+    .top__text {
+      width: 60%;
+      h1 {
+        font-size: 45px;
+      }
+      .top__materials {
+        @include ancker;
+        width: 50%;
+      }
     }
-    .top__materials {
-      @include ancker;
-      width: 50%;
-    }
-  }
-  .top__imgflame {
-    width: 30%;
-    .top__img {
-      @include imgbase;
+    .top__imgflame {
+      width: 30%;
+      .top__img {
+        @include imgbase;
+      }
     }
   }
 }
 
 .concept {
   @include flexbase ;
+  @include bg-color ;
+  @include section-space;
   .concept__imgflame {
     width: 40%;
   }
@@ -113,6 +124,7 @@ header a {
 
 .task__flex {
   @include flexbase;
+  @include section-space;
   .task__flame {
     width: 30%;
     .task__imgflame {
@@ -128,17 +140,23 @@ header a {
   }
 }
 
+.clear {
+  @include bg-color;
+  @include section-space;
+}
 .clear__content {
-  @include flexbase ;
   .clear__item {
+    @include flexbase ;
     .clear__text {
       width: 50%;
       .clear__text-flex {
         display: flex;
         text-align: center;
+        align-items: center;
         .clear__number{
           color: $base-c;
-          font-size: 20px;
+          font-size: 25px;
+          margin-right: 15px;
         }
       }
     }
@@ -151,6 +169,9 @@ header a {
   }
 }
 
+.feature {
+  @include section-space;
+}
 .feature__flex {
   @include flexbase ;
   .flex__item {
@@ -172,9 +193,14 @@ header a {
   }
 }
 
+
 .signup-page {
+  padding: 30px 0;
+  background-color: $base-c;
+  @include section-space;
   h2 {
-    text-align: center
+    text-align: center;
+    color:white;
   }
   .signup-page__btn {
     display: flex;
@@ -197,6 +223,9 @@ header a {
   }
 }
 
+.example {
+  @include section-space;
+}
 .example__flex {
   @include flexbase;
   width: 90%;
@@ -236,6 +265,9 @@ header a {
   }
 }
 
+.cost {
+  @include section-space  ;
+}
 .cost__flex {
   display: flex;
   justify-content: center;
@@ -252,13 +284,18 @@ header a {
       color: white;
       h2 {
         font-size: 35px;
+        margin: 0px 0px 20px 0px;
+        padding-bottom: 20px;
+      }
+      .cost--for-month {
+        font-size: 25px;
       }
     }
     .cost__plan-contents {
       .cost__plan-marit {
         border-bottom: 1px solid lightgray;
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
       }
       .cost__plan-apply {
         @include ancker ;
@@ -268,14 +305,117 @@ header a {
       a {
         width: 80%;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
       }
     }
   }
 }
 .cib {
   background-color: $second-c;
+  border-radius: 15px 15px 0 0 ;
+  p{
+    margin: 0;
+    padding: 20px 0;
+  }
 }
 .cip {
   background-color: $base-c;
+  border-radius: 15px 15px 0 0 ;
+  p {
+    margin: 0px 0;
+    padding: 20px 0;
+  }
+}
+
+.container__little{
+  width: 55%;
+  margin: 0 auto;
+}
+.question__box {
+  margin-bottom: 20px;
+  .question__title {
+    display: flex;
+    align-items: center;
+    color: $base-c;
+    border:$base-c 1px solid ;
+    border-radius: 10px;
+    padding: 0px 15px;
+    margin: none;
+    .question__Q {
+      padding-right: 15px;
+    }
+  }
+  .question__answer {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    .question__A {
+      color: $second-c;
+      padding: 15px 10px;
+    }
+  }
+}
+
+.tryit {
+  @include section-space ;
+  margin-bottom: 0;
+  background-color: $base-c;
+  .white {
+    color: white;
+  }
+  .tryit__link{
+    @include flexbase ;
+    justify-content: center
+  }
+  .view__materials {
+    @include ancker ;
+    display: inline-block;
+    background-color: $second-c;
+    width: 35%;
+    margin-right: 30px;
+  }
+  .view--c-account{
+    @include ancker ;
+    display: inline-block;
+    background-color:white;
+    border:2px solid #e37ab0;      
+    color: #e37ab0;
+    width: 35%;
+  }
+}
+
+.end-link {
+  @include bg-color;
+  padding: 25px 0;
+}
+.end-link__flex-content {
+  display: flex ;
+  justify-content: space-between;
+  .end-link__imgflame {
+    width: 15%;
+    .end-link__img {
+      @include imgbase;
+    }
+  }
+  .end-link__flex {
+    @include flexbase;
+    justify-content: space-between;
+    width: 70%;
+    .end-link__flex-item {
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    .left {
+      margin: left;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  @include bg-color;
 }
