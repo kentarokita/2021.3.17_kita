@@ -3,11 +3,43 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.pcbr {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .pcbr {
+    display: none;
+  }
+}
+
+.pcbr .spbr {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .pcbr .spbr {
+    display: block;
+  }
+}
+
 .ttl {
   font-size: 35px;
   text-align: center;
   font-weight: bold;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .ttl {
+    font-size: 30px;
+  }
 }
 
 header a {
@@ -63,6 +95,12 @@ header a {
   background-color: #6f99e3;
 }
 
+@media screen and (max-width: 480px) {
+  .fview-nav {
+    display: none;
+  }
+}
+
 .top {
   background-image: url(img/fv__bg-pc.svg);
   background-size: cover;
@@ -72,6 +110,7 @@ header a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .top .top__flex .top__text {
@@ -95,16 +134,47 @@ header a {
 
 .top .top__flex .top__imgflame {
   width: 30%;
+  margin: 0 auto;
 }
 
 .top .top__flex .top__imgflame .top__img img {
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .top {
+    background-image: url(img/fv__bg-sp.svg);
+    background-size: cover;
+  }
+  .top .top__flex .top__text {
+    width: 100%;
+    position: relative;
+  }
+  .top .top__flex .top__text h1 {
+    font-size: 32px;
+  }
+  .top .top__flex .top__text .top__materials {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+  }
+  .top .top__flex .top__imgflame {
+    width: 80%;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .top .top__flex .top__imgflame .top__img {
+    width: 100%;
+  }
+}
+
 .concept {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #FFDFF7;
   padding: 25px 0;
   margin: 25px 0;
@@ -121,6 +191,23 @@ header a {
 .concept .concept__text {
   width: 50%;
   font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .concept .concept__imgflame {
+    order: 2;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .concept .concept__imgflame .concept__img {
+    width: 100%;
+  }
+  .concept .concept__text {
+    order: 1;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
 }
 
 .task__flex {
@@ -147,16 +234,48 @@ header a {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .task__flex {
+    flex-direction: column;
+  }
+  .task__flex .task__flame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .task__flex .task__flame .task__imgflame {
+    width: 40%;
+  }
+  .task__flex .task__flame .task__text {
+    font-size: 18px;
+    width: 50%;
+    text-align: left;
+  }
+  .task__flex .task__flame .task__1 {
+    order: 2;
+  }
+  .task__flex .task__flame .task__2 {
+    order: 1;
+  }
+}
+
 .clear {
   background-color: #FFDFF7;
   padding: 25px 0;
   margin: 25px 0;
 }
 
-.clear__content .clear__item {
+.clear__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.clear__content .clear__item {
+  display: flex;
 }
 
 .clear__content .clear__item .clear__text {
@@ -214,6 +333,19 @@ header a {
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .feature__flex {
+    flex-wrap: wrap;
+  }
+  .feature__flex .flex__item {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  .feature__flex .flex__item p {
+    margin: 3px 0;
+  }
+}
+
 .signup-page {
   padding: 30px 0;
   background-color: #e37ab0;
@@ -258,6 +390,27 @@ header a {
   border: 2px solid #e37ab0;
   color: #e37ab0;
   width: 35%;
+}
+
+@media screen and (max-width: 480px) {
+  .signup-page h2 {
+    font-size: 25px;
+  }
+  .signup-page .container .signup-page__btn {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .signup-page .container .signup-page__btn a {
+    width: 100%;
+  }
+  .signup-page .container .signup-page__btn .signup-page__materials {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+  }
+  .signup-page .container .signup-page__btn .signup--c-account {
+    padding: 10px 0px;
+  }
 }
 
 .example {
@@ -314,6 +467,16 @@ header a {
   text-align: left;
   margin: 15px 0;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .example__flex {
+    flex-direction: column;
+  }
+  .example__flex .example__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .cost {
@@ -394,6 +557,16 @@ header a {
   padding: 20px 0;
 }
 
+@media screen and (max-width: 480px) {
+  .cost__flex {
+    flex-direction: column;
+    width: 85%;
+  }
+  .cost__flex .cost__item {
+    width: 100%;
+  }
+}
+
 .container__little {
   width: 55%;
   margin: 0 auto;
@@ -426,6 +599,21 @@ header a {
 .question__box .question__answer .question__A {
   color: #6f99e3;
   padding: 15px 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container__little {
+    width: 85%;
+  }
+  .container__little .question__box .question__title .question__ttl-text {
+    font-size: 16px;
+  }
+  .container__little .question__box .question__answer {
+    align-items: flex-start;
+  }
+  .container__little .question__box .question__answer .question__A {
+    padding: 0px 10px;
+  }
 }
 
 .tryit {
@@ -475,6 +663,25 @@ header a {
   width: 35%;
 }
 
+@media screen and (max-width: 480px) {
+  .tryit .tryit__ttl {
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+  .tryit__flex .tryit__link {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .tryit__flex .tryit__link a {
+    width: 85%;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  .tryit__flex .tryit__link .view__materials {
+    margin-bottom: 10px;
+  }
+}
+
 .end-link {
   background-color: #FFDFF7;
   padding: 25px 0;
@@ -511,6 +718,29 @@ header a {
 
 .end-link__flex-content .end-link__flex .left {
   margin: left;
+}
+
+@media screen and (max-width: 480px) {
+  .end-link__flex-content {
+    flex-direction: column;
+    justify-content: left;
+  }
+  .end-link__flex-content .end-link__imgflame {
+    margin-bottom: 15px;
+  }
+  .end-link__flex-content .end-link__flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .end-link__flex-content .end-link__flex .end-link__flex-item {
+    margin: 0;
+  }
+  .end-link__flex-content .end-link__flex .end-link__flex-item li {
+    margin-bottom: 10px;
+  }
+  .end-link__flex-content .end-link__flex .left {
+    margin: 0;
+  }
 }
 
 footer {
