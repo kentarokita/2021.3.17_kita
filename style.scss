@@ -249,27 +249,53 @@ header a {
 .clear__content {
   @include flexbase ;
   flex-wrap: wrap;
-  .clear__item {
-    display: flex;
+  .clear__text {
+    width: 50%;
+    .clear__text-flex {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      .clear__number{
+        color: $base-c;
+        font-size: 25px;
+        margin-right: 15px;
+      } 
+    }
+  }
+  .clear__imgflame {
+    width: 40%;
+    .clear__img {
+    width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .clear__content {
+    flex-direction: column;
+    margin-bottom: 25px;
     .clear__text {
-      width: 50%;
-      .clear__text-flex {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        .clear__number{
-          color: $base-c;
-          font-size: 25px;
-          margin-right: 15px;
+      width: 100%;
+      .clear__text-flex{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 15px;
+        h1 {
+          margin: 0;
         }
       }
     }
     .clear__imgflame {
-      width: 40%;
-     .clear__img {
       width: 100%;
-     }
+      .concept__img {
+        width: 100%;
+      }
     }
+  }
+  .clear__1 {
+    order: 2;
+  }
+  .clear__2 {
+    order: 1;
   }
 }
 

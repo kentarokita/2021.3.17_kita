@@ -274,32 +274,58 @@ header a {
   flex-wrap: wrap;
 }
 
-.clear__content .clear__item {
-  display: flex;
-}
-
-.clear__content .clear__item .clear__text {
+.clear__content .clear__text {
   width: 50%;
 }
 
-.clear__content .clear__item .clear__text .clear__text-flex {
+.clear__content .clear__text .clear__text-flex {
   display: flex;
   text-align: center;
   align-items: center;
 }
 
-.clear__content .clear__item .clear__text .clear__text-flex .clear__number {
+.clear__content .clear__text .clear__text-flex .clear__number {
   color: #e37ab0;
   font-size: 25px;
   margin-right: 15px;
 }
 
-.clear__content .clear__item .clear__imgflame {
+.clear__content .clear__imgflame {
   width: 40%;
 }
 
-.clear__content .clear__item .clear__imgflame .clear__img {
+.clear__content .clear__imgflame .clear__img {
   width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .clear__content {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .clear__content .clear__text {
+    width: 100%;
+  }
+  .clear__content .clear__text .clear__text-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+  .clear__content .clear__text .clear__text-flex h1 {
+    margin: 0;
+  }
+  .clear__content .clear__imgflame {
+    width: 100%;
+  }
+  .clear__content .clear__imgflame .concept__img {
+    width: 100%;
+  }
+  .clear__1 {
+    order: 2;
+  }
+  .clear__2 {
+    order: 1;
+  }
 }
 
 .feature {
