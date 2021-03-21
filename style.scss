@@ -5,23 +5,15 @@
     width: 90%;
   }
 }
-.pcbr {
-  display: block;
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  .spbr {
-    display: none;
-    @media screen and (max-width: 480px) {
-      display: block;
-    }
-  }
+section {
+  margin-bottom: 40px;
 }
+
 .ttl {
   font-size: 35px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin: 40px 0px;
   @media screen and (max-width: 480px) {
     font-size: 30px;
   }
@@ -59,9 +51,11 @@ $second-c:#6f99e3;
   margin: 25px 0;
 }
 
-
-header a {
-  text-decoration:none;
+header{
+  margin-bottom: 40px;
+  a {
+    text-decoration:none;
+}
 }
 
 .fview {
@@ -118,6 +112,11 @@ header a {
       width: 60%;
       h1 {
         font-size: 45px;
+        margin-bottom: 20px;
+        line-height: 60px;
+      }
+      p {
+        margin-bottom: 20px;
       }
       .top__materials {
         @include ancker;
@@ -170,33 +169,53 @@ header a {
   @include flexbase ;
   flex-wrap: wrap;
   @include bg-color ;
-  @include section-space;
+  padding: 25px 0;
   .concept__imgflame {
     width: 40%;
-  }
-  .concept__img {
-    @include imgbase;
+    .concept__img {
+      width: 100%;
+    }
   }
   .concept__text {
     width: 50%;
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 @media screen and (max-width: 480px){
   .concept {
     .concept__imgflame {
-      order: 2;
-      width: 90%;
+      width: 40%;
+      margin: 0 auto;
+      .concept__img {
+        width: 40%;
+      }
+    }
+    .concept__text {
+      width: 50%;
+      margin: 0 auto;
+      font-size: 12px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+}
+@media screen and (max-width: 780px){
+  .concept {
+    .concept__imgflame {
+      width: 50%;
       margin: 0 auto;
       .concept__img {
         width: 100%;
       }
     }
     .concept__text {
-      order: 1;
-      width: 90%;
+      width: 50%;
       margin: 0 auto;
       font-size: 12px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 25px;
     }
   }
 }
@@ -257,6 +276,11 @@ header a {
       display: flex;
       text-align: center;
       align-items: center;
+      h1 {
+        font-size: 1.5em;
+        text-align: left;
+        margin-bottom: 30px;
+      }
       .clear__number{
         color: $base-c;
         font-size: 25px;
@@ -345,6 +369,8 @@ header a {
   h2 {
     text-align: center;
     color:white;
+    // margin-bottom: 20px;
+    font-size: 20px;
   }
   .signup-page__btn {
     display: flex;
@@ -415,7 +441,7 @@ header a {
       position: relative;
       .example__tag {
         position: absolute;
-        top: -19%;
+        top: -20px;
         padding: 5px 8px;
         border: 1px solid $base-c;
         background-color: white;
@@ -519,26 +545,30 @@ header a {
   margin: 0 auto;
 }
 .question__box {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   .question__title {
     display: flex;
     align-items: center;
     color: $base-c;
     border:$base-c 1px solid ;
     border-radius: 10px;
-    padding: 0px 15px;
+    padding: 25px;
     margin: none;
+    margin-bottom: 20px;
+    font-size: 25px;
     .question__Q {
       padding-right: 15px;
     }
   }
   .question__answer {
     display: flex;
-    align-items: center;
     padding: 0px 10px;
+    font-size: 18px;
     .question__A {
       color: $second-c;
-      padding: 15px 10px;
+      padding: 0px 10px;
+      font-size: 25px;
+      align-items: flex-start;
     }
   }
 }
@@ -578,6 +608,8 @@ header a {
     background-color: $second-c;
     width: 35%;
     margin-right: 30px;
+    font-size: 20px;
+    padding: 15px;
   }
   .view--c-account{
     @include ancker ;
@@ -586,6 +618,8 @@ header a {
     border:2px solid #e37ab0;      
     color: #e37ab0;
     width: 35%;
+    font-size: 20px;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -615,6 +649,7 @@ header a {
 .end-link {
   @include bg-color;
   padding: 25px 0;
+  margin-bottom: 0px;
 }
 .end-link__flex-content {
   display: flex ;
@@ -629,9 +664,11 @@ header a {
     @include flexbase;
     justify-content: space-between;
     width: 70%;
+    padding: 20px 0 30px;
     .end-link__flex-item {
       li {
         list-style: none;
+        margin-bottom: 10px;
       }
       a {
         text-decoration: none;
@@ -670,4 +707,5 @@ header a {
 footer {
   text-align: center;
   @include bg-color;
+  padding-bottom: 10px;
 }

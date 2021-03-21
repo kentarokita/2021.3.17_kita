@@ -9,37 +9,25 @@
   }
 }
 
-.pcbr {
-  display: block;
-}
-
-@media screen and (max-width: 480px) {
-  .pcbr {
-    display: none;
-  }
-}
-
-.pcbr .spbr {
-  display: none;
-}
-
-@media screen and (max-width: 480px) {
-  .pcbr .spbr {
-    display: block;
-  }
+section {
+  margin-bottom: 40px;
 }
 
 .ttl {
   font-size: 35px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin: 40px 0px;
 }
 
 @media screen and (max-width: 480px) {
   .ttl {
     font-size: 30px;
   }
+}
+
+header {
+  margin-bottom: 40px;
 }
 
 header a {
@@ -119,6 +107,12 @@ header a {
 
 .top .top__flex .top__text h1 {
   font-size: 45px;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+
+.top .top__flex .top__text p {
+  margin-bottom: 20px;
 }
 
 .top .top__flex .top__text .top__materials {
@@ -177,36 +171,54 @@ header a {
   flex-wrap: wrap;
   background-color: #FFDFF7;
   padding: 25px 0;
-  margin: 25px 0;
 }
 
 .concept .concept__imgflame {
   width: 40%;
 }
 
-.concept .concept__img img {
+.concept .concept__imgflame .concept__img {
   width: 100%;
 }
 
 .concept .concept__text {
   width: 50%;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 @media screen and (max-width: 480px) {
   .concept .concept__imgflame {
-    order: 2;
-    width: 90%;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .concept .concept__imgflame .concept__img {
+    width: 40%;
+  }
+  .concept .concept__text {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .concept .concept__imgflame {
+    width: 50%;
     margin: 0 auto;
   }
   .concept .concept__imgflame .concept__img {
     width: 100%;
   }
   .concept .concept__text {
-    order: 1;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
   }
 }
 
@@ -282,6 +294,12 @@ header a {
   display: flex;
   text-align: center;
   align-items: center;
+}
+
+.clear__content .clear__text .clear__text-flex h1 {
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .clear__content .clear__text .clear__text-flex .clear__number {
@@ -382,6 +400,7 @@ header a {
 .signup-page h2 {
   text-align: center;
   color: white;
+  font-size: 20px;
 }
 
 .signup-page .signup-page__btn {
@@ -477,7 +496,7 @@ header a {
 
 .example__flex .example__item .example__textbox .example__tag {
   position: absolute;
-  top: -19%;
+  top: -20px;
   padding: 5px 8px;
   border: 1px solid #e37ab0;
   background-color: white;
@@ -599,7 +618,7 @@ header a {
 }
 
 .question__box {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .question__box .question__title {
@@ -608,8 +627,10 @@ header a {
   color: #e37ab0;
   border: #e37ab0 1px solid;
   border-radius: 10px;
-  padding: 0px 15px;
+  padding: 25px;
   margin: none;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .question__box .question__title .question__Q {
@@ -618,13 +639,15 @@ header a {
 
 .question__box .question__answer {
   display: flex;
-  align-items: center;
   padding: 0px 10px;
+  font-size: 18px;
 }
 
 .question__box .question__answer .question__A {
   color: #6f99e3;
-  padding: 15px 10px;
+  padding: 0px 10px;
+  font-size: 25px;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 480px) {
@@ -672,6 +695,8 @@ header a {
   background-color: #6f99e3;
   width: 35%;
   margin-right: 30px;
+  font-size: 20px;
+  padding: 15px;
 }
 
 .tryit .view--c-account {
@@ -687,6 +712,8 @@ header a {
   border: 2px solid #e37ab0;
   color: #e37ab0;
   width: 35%;
+  font-size: 20px;
+  padding: 15px;
 }
 
 @media screen and (max-width: 480px) {
@@ -711,6 +738,7 @@ header a {
 .end-link {
   background-color: #FFDFF7;
   padding: 25px 0;
+  margin-bottom: 0px;
 }
 
 .end-link__flex-content {
@@ -732,10 +760,12 @@ header a {
   align-items: center;
   justify-content: space-between;
   width: 70%;
+  padding: 20px 0 30px;
 }
 
 .end-link__flex-content .end-link__flex .end-link__flex-item li {
   list-style: none;
+  margin-bottom: 10px;
 }
 
 .end-link__flex-content .end-link__flex .end-link__flex-item a {
@@ -772,4 +802,5 @@ header a {
 footer {
   text-align: center;
   background-color: #FFDFF7;
+  padding-bottom: 10px;
 }
