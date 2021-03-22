@@ -41,11 +41,11 @@ header a {
   margin-bottom: 25px;
 }
 
-.fview .fview__imgflame {
+.fview__imgflame {
   width: 150px;
 }
 
-.fview .fview__imgflame .fview__img img {
+.fview__imgflame__img img {
   width: 100%;
 }
 
@@ -74,12 +74,12 @@ header a {
   border-radius: 25px;
 }
 
-.signup .signup__materials {
+.signup__materials {
   background-color: #e37ab0;
   margin-right: 10px;
 }
 
-.signup .signup--c-account {
+.signup--c-account {
   background-color: #6f99e3;
 }
 
@@ -94,28 +94,28 @@ header a {
   background-size: cover;
 }
 
-.top .top__flex {
+.top__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.top .top__flex .top__text {
+.top__flex .top__text {
   width: 60%;
 }
 
-.top .top__flex .top__text h1 {
+.top__flex .top__text h1 {
   font-size: 45px;
   margin-bottom: 20px;
   line-height: 60px;
 }
 
-.top .top__flex .top__text p {
+.top__flex .top__text p {
   margin-bottom: 20px;
 }
 
-.top .top__flex .top__text .top__materials {
+.top__flex .top__text .top__materials {
   display: block;
   padding: 10px 0;
   color: white;
@@ -126,12 +126,12 @@ header a {
   width: 50%;
 }
 
-.top .top__flex .top__imgflame {
+.top__flex .top__imgflame {
   width: 30%;
   margin: 0 auto;
 }
 
-.top .top__flex .top__imgflame .top__img img {
+.top__flex .top__imgflame .top__img img {
   width: 100%;
 }
 
@@ -140,26 +140,26 @@ header a {
     background-image: url(img/fv__bg-sp.svg);
     background-size: cover;
   }
-  .top .top__flex .top__text {
+  .top__flex .top__text {
     width: 100%;
     position: relative;
   }
-  .top .top__flex .top__text h1 {
+  .top__flex .top__text h1 {
     font-size: 32px;
   }
-  .top .top__flex .top__text .top__materials {
+  .top__flex .top__text .top__materials {
     position: absolute;
     top: 550px;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 100%;
   }
-  .top .top__flex .top__imgflame {
+  .top__flex .top__imgflame {
     width: 80%;
     padding-bottom: 50px;
     text-align: center;
   }
-  .top .top__flex .top__imgflame .top__img {
+  .top__flex .top__imgflame .top__img {
     width: 100%;
   }
 }
@@ -514,13 +514,21 @@ header a {
   padding: 0 10px;
 }
 
+.example__flex .example__item .example__textbox .example__text__spbr {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   .example__flex {
-    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   .example__flex .example__item {
+    display: inline-block;
     width: 100%;
-    margin-bottom: 10px;
+  }
+  .example__flex .example__item__spbr {
+    display: block;
   }
 }
 
@@ -609,6 +617,7 @@ header a {
   }
   .cost__flex .cost__item {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 

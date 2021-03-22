@@ -61,9 +61,9 @@ header{
 .fview {
   @include flexbase ;
   margin-bottom: 25px;
-  .fview__imgflame{
+  &__imgflame{
     width:150px;
-    .fview__img{
+    &__img{
       @include imgbase;
     }
   }
@@ -87,11 +87,11 @@ header{
     padding:10px 25px;
     border-radius: 25px;
   }
-  .signup__materials{
+  &__materials{
     background-color: $base-c;
     margin-right: 10px;
   }
-  .signup--c-account {
+  &--c-account {
     background-color: $second-c;
   }
 }
@@ -105,7 +105,7 @@ header{
 .top {
   background-image: url(img/fv__bg-pc.svg);
   background-size: cover;
-  .top__flex{
+  &__flex{
     @include flexbase ;
     flex-wrap: wrap;
     .top__text {
@@ -138,7 +138,7 @@ header{
   .top{
     background-image: url(img/fv__bg-sp.svg);
     background-size: cover;
-    .top__flex {
+    &__flex {
       .top__text {
         width: 100%;
         position: relative;
@@ -455,16 +455,24 @@ header{
         text-align: left;
         margin: 15px 0;
         padding: 0 10px;
+        &__spbr {
+          display: none;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 480px) {
   .example__flex {
-    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
     .example__item {
+      display: inline-block;
       width: 100%;
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
+      &__spbr {
+        display: block;
+      }
     }
   }
 }
@@ -536,6 +544,7 @@ header{
     width: 85%;
     .cost__item {
       width: 100%;
+      margin-bottom: 30px;
     }
   }
 }
